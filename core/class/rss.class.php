@@ -119,13 +119,13 @@ class rss extends eqLogic {
 			$Jeedom_Blog->setIsVisible(0);
 			$Jeedom_Blog->setOrder(1);
 			$Jeedom_Blog->setName(__('Jeedom Blog', __FILE__));
+			$Jeedom_Blog->setType('info');
+			$Jeedom_Blog->setSubType('string');
+			$Jeedom_Blog->setConfiguration("lien_rss","https://blog.jeedom.com/?feed=rss2");
+			$Jeedom_Blog->setConfiguration("nbr_article","3");
+			$Jeedom_Blog->setEqLogic_id($this->getId());
+			$Jeedom_Blog->save();
 		}
-        $Jeedom_Blog->setType('info');
-		$Jeedom_Blog->setSubType('string');
-		$Jeedom_Blog->setConfiguration("lien_rss","http://blog.jeedom.fr/?feed=rss2");
-		$Jeedom_Blog->setConfiguration("nbr_article","2");
-		$Jeedom_Blog->setEqLogic_id($this->getId());
-		$Jeedom_Blog->save();
 		
 		$Jeedom_Market = $this->getCmd(null, 'Jeedom_Market_Plugin');
 		if (!is_object($Jeedom_Market)) {
@@ -134,13 +134,13 @@ class rss extends eqLogic {
 			$Jeedom_Market->setIsVisible(0);
 			$Jeedom_Market->setOrder(2);
 			$Jeedom_Market->setName(__('Jeedom Market (Plugin)', __FILE__));
+			$Jeedom_Market->setType('info');
+			$Jeedom_Market->setSubType('string');
+			$Jeedom_Market->setConfiguration("lien_rss","http://market.jeedom.fr/plugin.xml");
+			$Jeedom_Market->setConfiguration("nbr_article","2");
+			$Jeedom_Market->setEqLogic_id($this->getId());
+			$Jeedom_Market->save();
 		}
-        $Jeedom_Market->setType('info');
-		$Jeedom_Market->setSubType('string');
-		$Jeedom_Market->setConfiguration("lien_rss","http://market.jeedom.fr/plugin.xml");
-		$Jeedom_Market->setConfiguration("nbr_article","2");
-		$Jeedom_Market->setEqLogic_id($this->getId());
-		$Jeedom_Market->save();
 		
 		$Jeedom_Market_2 = $this->getCmd(null, 'Jeedom_Market_Widget');
 		if (!is_object($Jeedom_Market_2)) {
@@ -149,13 +149,13 @@ class rss extends eqLogic {
 			$Jeedom_Market_2->setIsVisible(0);
 			$Jeedom_Market_2->setOrder(3);
 			$Jeedom_Market_2->setName(__('Jeedom Market (Widget)', __FILE__));
+			$Jeedom_Market_2->setType('info');
+			$Jeedom_Market_2->setSubType('string');
+			$Jeedom_Market_2->setConfiguration("lien_rss","http://market.jeedom.fr/widget.xml");
+			$Jeedom_Market_2->setConfiguration("nbr_article","2");
+			$Jeedom_Market_2->setEqLogic_id($this->getId());
+			$Jeedom_Market_2->save();
 		}
-        $Jeedom_Market_2->setType('info');
-		$Jeedom_Market_2->setSubType('string');
-		$Jeedom_Market_2->setConfiguration("lien_rss","http://market.jeedom.fr/widget.xml");
-		$Jeedom_Market_2->setConfiguration("nbr_article","2");
-		$Jeedom_Market_2->setEqLogic_id($this->getId());
-		$Jeedom_Market_2->save();
 		
 		$Jeedom_Market_3 = $this->getCmd(null, 'Jeedom_Market_Script');
 		if (!is_object($Jeedom_Market_3)) {
@@ -164,13 +164,13 @@ class rss extends eqLogic {
 			$Jeedom_Market_3->setIsVisible(0);
 			$Jeedom_Market_3->setOrder(4);
 			$Jeedom_Market_3->setName(__('Jeedom Market (Script)', __FILE__));
+			$Jeedom_Market_3->setType('info');
+			$Jeedom_Market_3->setSubType('string');
+			$Jeedom_Market_3->setConfiguration("lien_rss","http://market.jeedom.fr/script.xml");
+			$Jeedom_Market_3->setConfiguration("nbr_article","2");
+			$Jeedom_Market_3->setEqLogic_id($this->getId());
+			$Jeedom_Market_3->save();
 		}
-        $Jeedom_Market_3->setType('info');
-		$Jeedom_Market_3->setSubType('string');
-		$Jeedom_Market_3->setConfiguration("lien_rss","http://market.jeedom.fr/script.xml");
-		$Jeedom_Market_3->setConfiguration("nbr_article","2");
-		$Jeedom_Market_3->setEqLogic_id($this->getId());
-		$Jeedom_Market_3->save();
 		
 		}
 	}
@@ -304,7 +304,7 @@ class rss extends eqLogic {
 					$li .= '<div class="btn-group" style="width:100%;">';
 					$li .= '<button type="button" style="float:left;width:20%;" class="btn btn-danger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://www.google.com/s2/favicons?domain='.$recuperateur['lien_rss'].'" /> '.$recuperateur['name_rss'].'</button>';
 					//$li .= '<div style="float:left;padding: 6px 12px;" > TEST </div>';
-					$li .= '<button type="button" style="float:left;width:75%;" class="btn btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><marquee>';
+					$li .= '<button type="button" style="float:left;width:75%;height:32px;" class="btn btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><marquee>';
 					
 					foreach($recuperateur['contenu'] as $recup){
 					if(isset($recup['title'])){
