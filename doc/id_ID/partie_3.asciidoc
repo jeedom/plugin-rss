@@ -1,0 +1,10 @@
+Voici comment tout ceci est présenté :
+
+Normal :
+image:../images/dashboard.jpg[width=400,align="center"]
+
+Barre :
+image:../images/dashboard2.jpg[width=400,align="center"]
+
+
+... N'hesitez pas à me faire un retour ;-)

@@ -1,0 +1,22 @@
+:icons:
+== RSS
+
+=== Description
+Plugin servant à avvoir le flux Rss de n'importe-quel flux directement sur votre dashboard.
+Attention lors de la premiere sauvegarde a ne pas mettre de lien pour beneficier des liens RSS Jeedom.
+
+'''
+=== 1 : Configuration du plugin
+include::partie_1.asciidoc[]
+
+'''
+=== 2 : Configuration des équipements
+include::partie_2.asciidoc[]
+
+'''
+=== 3 : La partie Dashboard
+include::partie_3.asciidoc[]
+
+'''
+=== FAQ
+include::faq.asciidoc[]

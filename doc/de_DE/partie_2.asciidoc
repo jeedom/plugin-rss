@@ -1,0 +1,21 @@
+La configuration des panneaux RSS est accessible à partir du menu plugin :
+
+image:../images/menu_rss_plugin.jpg[width=353,align="center"]
+
+Puis
+
+image:../images/rss_plugin.jpg[width=600,align="center"]
+
+... Vous pouvez :
+
+* Ajouter un flux RSS : permet d'ajouter une ligne.
+* Nom : Inscrivez le nom du flux.
+* Lien RSS : mettre un lien RSS (valide).
+* Nombre d'article : sera le nombre d'article qui serons visible sur votre dashboard.
+* Action : permet d'activer ou desactiver le flux ou meme de supprimer la ligne.
+* Ajouter les Flux Jeedom
+* Mettre le Plugin (visuel Dashboard) en Mode Breaking News.
+
+... A Savoir :
+
+La mise à jours est faite toute les 15 Minutes, il est possible qu'apres votre sauvegarde sur cette page, vous n'ayez pas le dashboard qui s'actualise, Problème en cours de résolution.
