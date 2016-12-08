@@ -384,5 +384,3 @@ class rssCmd extends cmd {
     /*     * **********************Getteur Setteur*************************** */
 }
 
-
-?>
