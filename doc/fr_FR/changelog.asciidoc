@@ -1,3 +1,5 @@
+Changelog détaillé : https://github.com/jeedom/plugin-rss/commits/stable
+
 * Version 1.0.1 - 2015-09-23
 
  Mise à jours Multi-RSS
