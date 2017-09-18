@@ -1,11 +1,11 @@
 {
-	"id" : "denonavr",
-	"name" : "Denon",
-	"description" : "Plugin permettant de piloter les amplificateurs Denon",
+	"id" : "rss",
+	"name" : "Rss",
+	"description" : "Voir les flux RSS d'un site web ou de plusieurs site via votre dashboard",
 	"licence" : "AGPL",
-	"author" : "Loïc",
+	"author" : "Rocket13011",
 	"require" : "3.0",
-	"category" : "multimedia",
-	"changelog" : "https://github.com/jeedom/plugin-denonavr/blob/stable/doc/#language#/changelog.asciidoc",
-	"documentation" : "https://github.com/jeedom/plugin-denonavr/blob/stable/doc/#language#/index.asciidoc"
+	"category" : "communication",
+	"changelog" : "https://github.com/jeedom/plugin-rss/blob/stable/doc/#language#/changelog.asciidoc",
+	"documentation" : "https://github.com/jeedom/plugin-rss/blob/stable/doc/#language#/index.asciidoc"
 }
